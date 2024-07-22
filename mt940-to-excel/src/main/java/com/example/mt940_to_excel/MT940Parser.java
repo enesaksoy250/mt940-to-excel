@@ -18,21 +18,21 @@ public class MT940Parser {
                     transactions.add(transaction);
                 }
                 transaction = new MT940Transaction();
-                // Banka kodu, şube kodu ve hesap kodu buraya eklenecek
+
             } else if (line.startsWith(":25:")) {
                 if (transaction != null) {
-                    transaction.setBankaKodu(line.substring(4, 8)); // Örnek: "0059"
-                    transaction.setSubeKodu(line.substring(9, 14)); // Örnek: "00372"
-                    transaction.setHesapKodu(line.substring(15));   // Örnek: "666009999"
+                    transaction.setBankaKodu(line.substring(4, 8));
+                    transaction.setSubeKodu(line.substring(9, 14));
+                    transaction.setHesapKodu(line.substring(15));
                 }
             } else if (line.startsWith(":61:")) {
                 if (transaction != null) {
-                    String amount = line.substring(17, line.indexOf('N')).trim(); // Örnek: "000000108256,39"
+                    String amount = line.substring(17, line.indexOf('N')).trim();
                     transaction.setIslemTutari(removeLeadingZeros(amount));
                 }
             } else if (line.startsWith(":86:")) {
                 if (transaction != null) {
-                    transaction.setIslemAciklamasi(line.substring(4).trim()); // Örnek: "- DBS Aktarım - DBS Aktarım"
+                    transaction.setIslemAciklamasi(line.substring(4).trim());
                 }
             }
         }
