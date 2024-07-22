@@ -30,8 +30,17 @@ public class Mt940ToExcelApplication {
 
 		DatabaseWriter writer = new DatabaseWriter();
 		writer.saveTransactions(transactions);
-
 		System.out.println("Veriler SQLite veritabanına başarıyla kaydedildi.");
+
+		ExcelWriter excelWriter = new ExcelWriter();
+		try {
+			excelWriter.writeToExcel(transactions, "test.xlsx");
+			System.out.println("Veriler Excel dosyasına başarıyla yazıldı.");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+
 
 	}
 
