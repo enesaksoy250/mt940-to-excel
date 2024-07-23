@@ -8,7 +8,7 @@ Bu proje, MT940 formatındaki banka işlemlerini okuyarak, verileri bir Excel do
    git clone https://github.com/enesaksoy250/mt940-to-excel.git            
 3.Projeyi IDE'nizde açın veya terminal üzerinden çalıştırın.
 
-##Kullanım
+## Kullanım
 
 1.MT940 verilerini bir dosyadan okumak için:  
 
@@ -24,7 +24,7 @@ Bu proje, MT940 formatındaki banka işlemlerini okuyarak, verileri bir Excel do
   DatabaseWriter sınıfı, verileri veritabanına yazar.
   DatabaseCleaner sınıfı, veritabanındaki tüm verileri veya tabloyu temizler.
 
-##Veritabanı  
+## Veritabanı  
 
   Proje, SQLite veritabanını kullanır. Veritabanı dosyası mt940.db olarak adlandırılmıştır. Bu dosya proje kök dizininde bulunur.
 
