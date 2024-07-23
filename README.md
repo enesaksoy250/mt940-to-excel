@@ -1,7 +1,7 @@
 Bu proje, MT940 formatındaki banka işlemlerini okuyarak, verileri bir Excel dosyasına dönüştüren bir Java uygulamasıdır. Ayrıca, veritabanına veri yazma ve veritabanındaki verileri silme işlevlerini de içerir.
 
 
-## Kurulum
+# Kurulum
 
 1. **Java JDK 17**'yi Java'nın resmi sitesinden indirip kurun.
 2. Bu projeyi klonlayın:  ```sh                   
