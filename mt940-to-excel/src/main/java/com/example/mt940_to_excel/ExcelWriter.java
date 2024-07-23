@@ -29,7 +29,7 @@ public class ExcelWriter {
         }
 
 
-        int rowNum = sheet.getLastRowNum() + 1; // Satır numarası sıfırdan başladığı için +1
+        int rowNum = sheet.getLastRowNum() + 1;
 
 
         for (MT940Transaction transaction : transactions) {
