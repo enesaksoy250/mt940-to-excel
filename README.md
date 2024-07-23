@@ -5,7 +5,7 @@ Bu proje, MT940 formatındaki banka işlemlerini okuyarak, verileri bir Excel do
 
 1. **Java JDK 17**'yi Java'nın resmi sitesinden indirip kurun.
 2. Bu projeyi klonlayın:  ```sh                   
-   git clone https://github.com/enesaksoy250/mt940-to-excel.git  
+   git clone https://github.com/enesaksoy250/mt940-to-excel.git
 3.Projeyi IDE'nizde açın veya terminal üzerinden çalıştırın.
 
 # Kullanım
