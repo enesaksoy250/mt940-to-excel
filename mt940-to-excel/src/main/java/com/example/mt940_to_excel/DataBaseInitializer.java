@@ -4,7 +4,7 @@ import java.sql.DriverManager;
 import java.sql.Statement;
 public class DataBaseInitializer {
 
-    private static final String URL = "jdbc:sqlite:mt940.db"; // Veritabanı dosyasının yolu
+    private static final String URL = "jdbc:sqlite:mt940.db";
 
     public static void initializeDatabase() {
         String createTableSQL = "CREATE TABLE IF NOT EXISTS transactions (" +
