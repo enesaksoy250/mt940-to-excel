@@ -28,8 +28,8 @@ Bu proje, MT940 formatındaki banka işlemlerini okuyarak, verileri bir Excel do
 
   Proje, SQLite veritabanını kullanır. Veritabanı dosyası mt940.db olarak adlandırılmıştır. Bu dosya proje kök dizininde bulunur.
 
-Veritabanı ile İlgili İşlemler  
+### Veritabanı ile İlgili İşlemler  
 
-  Veritabanını Başlatma: DataBaseInitializer.initializeDatabase() metodunu çağırarak tabloyu oluşturabilirsiniz. 
-  Verileri Kaydetme: DatabaseWriter.saveTransactions(List<MT940Transaction> transactions) metodunu kullanarak verileri veritabanına yazabilirsiniz.
+  Veritabanını Başlatma: DataBaseInitializer.initializeDatabase() metodunu çağırarak tabloyu oluşturabilirsiniz.   
+  Verileri Kaydetme: DatabaseWriter.saveTransactions(List<MT940Transaction> transactions) metodunu kullanarak verileri veritabanına yazabilirsiniz.  
   Verileri Silme: DatabaseCleaner sınıfını kullanarak veritabanındaki tüm verileri veya tabloyu temizleyebilirsiniz.
