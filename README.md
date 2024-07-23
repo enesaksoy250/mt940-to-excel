@@ -10,15 +10,15 @@ Bu proje, MT940 formatındaki banka işlemlerini okuyarak, verileri bir Excel do
 
 ## Kullanım
 
-1.MT940 verilerini bir dosyadan okumak için:  
+### 1.MT940 verilerini bir dosyadan okumak için:  
 
   Bir tane txt dosyasına MT940 formatında verilerinizi ekleyin.(Dosyanın yolunu belirtmeyi unutmayın)
 
-2.Verileri Excel dosyasına yazmak için:  
+### 2.Verileri Excel dosyasına yazmak için:  
 
   Main sınıfını çalıştırın. Bu, MT940 verilerini okuyacak ve test.xlsx adında bir Excel dosyasına yazacaktır.
 
-3.Veritabanı işlemleri:  
+### 3.Veritabanı işlemleri:  
 
   DataBaseInitializer sınıfı, veritabanını oluşturur ve gerekli tabloları ayarlar.
   DatabaseWriter sınıfı, verileri veritabanına yazar.
