@@ -3,7 +3,7 @@ Bu proje, MT940 formatındaki banka işlemlerini okuyarak, verileri bir Excel do
 
 ## Kurulum
 
-1. **Java JDK 17**'yi [Java'nın resmi sitesinden](https://www.oracle.com/java/technologies/javase-jdk17-downloads.html) indirip kurun.
+1. **Java JDK 17**'yi Java'nın resmi sitesinden indirip kurun.
 2. Bu projeyi klonlayın:  ```sh
    git clone https://github.com/enesaksoy250/mt940-to-excel.git
 3.Projeyi IDE'nizde açın veya terminal üzerinden çalıştırın.
@@ -24,7 +24,7 @@ Bu proje, MT940 formatındaki banka işlemlerini okuyarak, verileri bir Excel do
   DatabaseWriter sınıfı, verileri veritabanına yazar.
   DatabaseCleaner sınıfı, veritabanındaki tüm verileri veya tabloyu temizler.
 
-Veritabanı
+##Veritabanı
 
   Proje, SQLite veritabanını kullanır. Veritabanı dosyası mt940.db olarak adlandırılmıştır. Bu dosya proje kök dizininde bulunur.
 
