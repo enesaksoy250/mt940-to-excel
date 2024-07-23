@@ -30,6 +30,6 @@ Bu proje, MT940 formatındaki banka işlemlerini okuyarak, verileri bir Excel do
 
 ### Veritabanı ile İlgili İşlemler  
 
-  Veritabanını Başlatma: DataBaseInitializer.initializeDatabase() metodunu çağırarak tabloyu oluşturabilirsiniz.   
-  Verileri Kaydetme: DatabaseWriter.saveTransactions(List<MT940Transaction> transactions) metodunu kullanarak verileri veritabanına yazabilirsiniz.  
-  Verileri Silme: DatabaseCleaner sınıfını kullanarak veritabanındaki tüm verileri veya tabloyu temizleyebilirsiniz.
+  1.Veritabanını Başlatma: DataBaseInitializer.initializeDatabase() metodunu çağırarak tabloyu oluşturabilirsiniz.   
+  2.Verileri Kaydetme: DatabaseWriter.saveTransactions(List<MT940Transaction> transactions) metodunu kullanarak verileri veritabanına yazabilirsiniz.  
+  3.Verileri Silme: DatabaseCleaner sınıfını kullanarak veritabanındaki tüm verileri veya tabloyu temizleyebilirsiniz.
