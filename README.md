@@ -1,1 +1,1 @@
-# mt940-to-excel
+Bu proje, MT940 formatındaki banka işlemlerini okuyarak, verileri bir Excel dosyasına dönüştüren bir Java uygulamasıdır. Ayrıca, veritabanına veri yazma ve veritabanındaki verileri silme işlevlerini de içerir.
