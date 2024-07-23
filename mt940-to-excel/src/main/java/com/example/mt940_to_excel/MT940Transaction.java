@@ -4,9 +4,12 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-
+@Data
 @Entity
+@NoArgsConstructor
 public class MT940Transaction {
 
     @Id
@@ -19,8 +22,6 @@ public class MT940Transaction {
     private String islemTutari;
     private String islemAciklamasi;
 
-    public MT940Transaction() {
-    }
 
     public MT940Transaction(String bankaKodu, String subeKodu, String hesapKodu, String islemTutari, String islemAciklamasi) {
         this.bankaKodu = bankaKodu;
@@ -30,64 +31,5 @@ public class MT940Transaction {
         this.islemAciklamasi = islemAciklamasi;
     }
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getBankaKodu() {
-        return bankaKodu;
-    }
-
-    public void setBankaKodu(String bankaKodu) {
-        this.bankaKodu = bankaKodu;
-    }
-
-    public String getSubeKodu() {
-        return subeKodu;
-    }
-
-    public void setSubeKodu(String subeKodu) {
-        this.subeKodu = subeKodu;
-    }
-
-    public String getHesapKodu() {
-        return hesapKodu;
-    }
-
-    public void setHesapKodu(String hesapKodu) {
-        this.hesapKodu = hesapKodu;
-    }
-
-    public String getIslemTutari() {
-        return islemTutari;
-    }
-
-    public void setIslemTutari(String islemTutari) {
-        this.islemTutari = islemTutari;
-    }
-
-    public String getIslemAciklamasi() {
-        return islemAciklamasi;
-    }
-
-    public void setIslemAciklamasi(String islemAciklamasi) {
-        this.islemAciklamasi = islemAciklamasi;
-    }
-
-    @Override
-    public String toString() {
-        return "Transaction{" +
-                "id=" + id +
-                ", bankaKodu='" + bankaKodu + '\'' +
-                ", subeKodu='" + subeKodu + '\'' +
-                ", hesapKodu='" + hesapKodu + '\'' +
-                ", islemTutari='" + islemTutari + '\'' +
-                ", islemAciklamasi='" + islemAciklamasi + '\'' +
-                '}';
-    }
 
 }

@@ -14,7 +14,6 @@ public class Mt940ToExcelApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(Mt940ToExcelApplication.class, args);
 
-		DataBaseInitializer.initializeDatabase();
 
 		String txtFilePath = "C:\\Users\\enesa\\OneDrive\\Masaüstü\\214002138_240717.txt";
 		String mt940Content="";
@@ -28,9 +27,6 @@ public class Mt940ToExcelApplication {
         MT940Parser parser = new MT940Parser();
 		List<MT940Transaction> transactions = parser.parse(mt940Content);
 
-		DatabaseWriter writer = new DatabaseWriter();
-		writer.saveTransactions(transactions);
-		System.out.println("Veriler SQLite veritabanına başarıyla kaydedildi.");
 
 		ExcelWriter excelWriter = new ExcelWriter();
 		try {

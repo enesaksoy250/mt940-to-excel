@@ -47,15 +47,15 @@ public class MT940Parser {
     private String removeLeadingZeros(String amount) {
 
         if (amount != null && !amount.isEmpty()) {
-            // Virgülden önceki kısmı işleme al
+
             String[] parts = amount.split(",");
             String integerPart = parts[0];
             String decimalPart = parts.length > 1 ? parts[1] : "";
 
-            // Başındaki sıfırları kaldır
+
             integerPart = integerPart.replaceFirst("^0+(?!$)", "");
 
-            // Virgülle birleştir
+
             return integerPart + (decimalPart.isEmpty() ? "" : "," + decimalPart);
         }
         return amount;
