@@ -12,7 +12,7 @@ Bu proje, MT940 formatındaki banka işlemlerini okuyarak, verileri bir Excel do
 
 1.MT940 verilerini bir dosyadan okumak için:
 
-  src/main/resources/mt940.txt dosyasına MT940 formatında verilerinizi ekleyin.
+  Bir tane txt dosyasına MT940 formatında verilerinizi ekleyin.(Dosyanın yolunu belirtmeyi unutmayın)
 
 2.Verileri Excel dosyasına yazmak için:
 
