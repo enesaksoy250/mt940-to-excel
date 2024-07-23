@@ -20,9 +20,9 @@ Bu proje, MT940 formatındaki banka işlemlerini okuyarak, verileri bir Excel do
 
 ### 3.Veritabanı işlemleri:  
 
-  DataBaseInitializer sınıfı, veritabanını oluşturur ve gerekli tabloları ayarlar.
-  DatabaseWriter sınıfı, verileri veritabanına yazar.
-  DatabaseCleaner sınıfı, veritabanındaki tüm verileri veya tabloyu temizler.
+  **DataBaseInitializer** sınıfı, veritabanını oluşturur ve gerekli tabloları ayarlar.  
+  **DatabaseWriter** sınıfı, verileri veritabanına yazar.  
+  **DatabaseCleaner** sınıfı, veritabanındaki tüm verileri veya tabloyu temizler.  
 
 # Veritabanı  
 
